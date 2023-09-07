@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+/* Efeito de cores passando */
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #FF5733, #FFC300, #33FF57, #339CFF, #FF33FF);
+  top: 0;
+  left: 0;
+  transform: scaleX(0); /* Começa com a escala zero */
+  transform-origin: 0 50%; /* Origem da transformação no lado esquerdo */
+  transition: transform 0.5s ease; /* Adiciona uma transição suave */
+}
+
+.nav-list a:hover::before {
+  transform: scaleX(1); /* Escala 100% no hover */
+}

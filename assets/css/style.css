@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Floyd';
+  src: url('../fonts/floyd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Floyd', 'Arial'; 
+  height: 200px;
+  
+}
+
+header {
+  background: url('../images/cover.svg') no-repeat  center center;/* Sombra */
+  background-size: 100%;
+  height: 93vh;
+  position: relative;
+  z-index: 1;
+  
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Cor da sombra com 50% de opacidade */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  z-index: -1; /* Para ficar atrás do conteúdo */
+}
+
+.logo {
+  width: 100px; /* Defina a largura e altura desejadas para a sua logo */
+  height: 50px;
+  margin-bottom: 40px;
+  margin-right: 20%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-top: 2.5rem;
+  margin-right: 2%;
+  position: relative;
+}
+
+.nav-list li { 
+  letter-spacing: 3px;
+  margin-left: 40px;
+}
+
+.nav-list li a { 
+  text-decoration-line: none;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black; /* Add a 2px black border around the letter (for WebKit browsers) */
+}
+
+.light { 
+  position: absolute;
+  top: 13.1%; /* Ajusta a posição superior conforme necessário */
+  left: 13%;
+  z-index: -1;/* Ajusta a posição esquerda conforme necessário */ 
+}
+
+.nav-list li:nth-child(1) a {
+  color: #FDFF00; /* Define a cor desejada para o primeiro link */
+}
+
+/* Estilos para o segundo link dentro do segundo <li> */
+.nav-list li:nth-child(2) a {
+  color: #CC102D; /* Define a cor desejada para o segundo link */
+}
+
+/* Estilos para o terceiro link dentro do terceiro <li> */
+.nav-list li:nth-child(3) a {
+  color: #33CA00; /* Define a cor desejada para o terceiro link */
+}
+
+.nav-list li:nth-child(4) a {
+  color: #1293C5; /* Define a cor desejada para o terceiro link */
+}
+
+.nav-list li:nth-child(5) a {
+  color: #7643E5; /* Define a cor desejada para o terceiro link */
+}
+
+.pink-floyd {
+  position: absolute;
+  top: 40%; /* Ajuste a posição superior conforme necessário */
+  left: 2%;
+}
+
+.pink-floyd img{
+  max-width: 80%;
+  height: auto;
+  width: auto;  
+}
+
+.pink-text {
+  background-image: linear-gradient(to right,  #CC102D 18.17%, #FFAD00 33.35%, #FDFF00 46.24%, #33CA00 60.87%, #1293C5 75.5%, #5C30BD 92.11%);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  text-align: center;
+  font-family: Floyd;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px; /* 112.5% */
+  text-transform: uppercase;
+  max-width: 30%;
+  top: 50%;
+  left: 37%;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.down_arrow {
+  position: relative;
+  top: 59%;
+  left: 50%;
+}
+
+
+
+
+
+
+
+
+
