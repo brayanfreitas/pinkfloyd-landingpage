@@ -10,22 +10,30 @@
   font-style: normal;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: 'Floyd', 'Arial'; 
-  height: 200px;
-  
+@font-face {
+  font-family: 'Irish Grover';
+  src: url('../fonts/IrishGrover-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 header {
-  background: url('../images/cover.svg') no-repeat  center center;/* Sombra */
+  background: url('../images/dark-side-the-wall.jpg') no-repeat center center;/* Sombra */
   background-size: 100%;
-  height: 93vh;
+  width: 100%;
+  height: 98vh;
   position: relative;
-  z-index: 1;
-  
+  z-index: 1;  
+}
+
+h1 {
+  font-family: 'Floyd', 'Arial';
+  color: white;
+}
+
+p {
+  font-family: 'Floyd', 'Arial';
+  color: white;
 }
 
 header::before {
@@ -35,23 +43,28 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Cor da sombra com 50% de opacidade */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  background: rgba(0, 0, 0, 0.25); /* Cor da sombra com 50% de opacidade */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
   z-index: -1; /* Para ficar atrás do conteúdo */
 }
 
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Floyd', 'Arial'; 
+}
+
 .logo {
-  width: 100px; /* Defina a largura e altura desejadas para a sua logo */
-  height: 50px;
-  margin-bottom: 40px;
-  margin-right: 20%;
+  margin-top: 3.8rem;
+  margin-left: 4.7rem;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  margin-top: 2.5rem;
-  margin-right: 2%;
+  margin-top: 2.8rem;
+  margin-right: 12rem;
   position: relative;
 }
 
@@ -62,40 +75,45 @@ header::before {
 
 .nav-list li a { 
   text-decoration-line: none;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
-  -webkit-text-stroke: 0.5px black; /* Add a 2px black border around the letter (for WebKit browsers) */
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  2px 2px 0 #000;
 }
 
 .light { 
   position: absolute;
   top: 13.1%; /* Ajusta a posição superior conforme necessário */
-  left: 13%;
-  z-index: -1;/* Ajusta a posição esquerda conforme necessário */ 
+  left: 14%;
+  z-index: -1;
 }
 
-.nav-list li:nth-child(1) a {
+.home {
   color: #FDFF00; /* Define a cor desejada para o primeiro link */
 }
 
 /* Estilos para o segundo link dentro do segundo <li> */
-.nav-list li:nth-child(2) a {
+.history {
   color: #CC102D; /* Define a cor desejada para o segundo link */
 }
 
 /* Estilos para o terceiro link dentro do terceiro <li> */
-.nav-list li:nth-child(3) a {
+.members {
   color: #33CA00; /* Define a cor desejada para o terceiro link */
 }
 
-.nav-list li:nth-child(4) a {
+.albuns {
   color: #1293C5; /* Define a cor desejada para o terceiro link */
 }
 
-.nav-list li:nth-child(5) a {
+.songs {
   color: #7643E5; /* Define a cor desejada para o terceiro link */
 }
+
 
 .pink-floyd {
   position: absolute;
@@ -122,22 +140,147 @@ header::before {
   line-height: 45px; /* 112.5% */
   text-transform: uppercase;
   max-width: 30%;
-  top: 50%;
-  left: 37%;
-  -webkit-text-stroke: 0.5px black;
+  top: 27rem;
+  left: 33.3%;
+  -webkit-text-stroke: 1px black;
 }
 
 .down_arrow {
   position: relative;
-  top: 59%;
-  left: 50%;
+  top: 35.5rem;
+  left: 56rem;
+}
+
+.history-page {
+  background: url('../images/members.png') no-repeat center center;/* Sombra */
+  background-size: 100%;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
+.about-header {
+  color: white;
+  margin-top: 4rem;
+  font-size: 60px;
+  font-family: 'Floyd', 'Arial';
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  2px 2px 0 #000; /* #000 é a cor do contorno, neste caso, preto */
+}
 
+.about-text {
+  display: flex; /* Torna a div paragrafos em um container flex */
+  justify-content: space-around; /* Distribui espaço uniformemente entre os parágrafos, alinhando-os horizontalmente */
+}
 
+.about-text p {
+  font-family: 'Irish Grover', 'Arial';
+  margin-top: 7rem;
+  width: 40%;
+  font-size: 30px;  
+  color: white; /* Dá uma largura para cada parágrafo para que não ocupem toda a largura disponível */
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  2px 2px 0 #000; 
+  text-align: justify;
+}
 
+.members-content {
+  height: 100%; 
+  background: linear-gradient(to bottom, #000000, #1b1a1a 60%, #2b2929 75%, #333 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 150vh;
+}
 
+.members-content h1 {
+  margin-top: 7rem;
+  font-size: 60px;
+}
 
+.members-images {
+  display: flex;
+  align-items: center;
+  margin-top: 10rem;
+  width: 80%;
+  margin-bottom: 10rem;
+}
+
+img {
+  border-radius: 50%; 
+}
+
+.line {
+  position: relative;
+  height: 2px; 
+  width: 50px; 
+  background-color: white; 
+  margin: 0 10px; 
+  width: 300%;
+}
+
+.left-text {
+  font-family: 'Irish Grover', 'Arial';
+  position: absolute;
+  margin-top: 15rem;
+  left: 15rem;
+  font-size: 18px;
+  width: 40%;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  2px 2px 0 #000; 
+  text-align: justify;
+}
+
+.right-text {
+  font-family: 'Irish Grover', 'Arial';
+  position: absolute;
+  margin-top: 15rem;
+  font-size: 18px;
+  width: 40%;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  2px 2px 0 #000; 
+  text-align: justify;
+  margin-left: 37%;
+}
+
+.roger-waters-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.guilmour-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.roger-waters-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.wright-image {
+  height: 20rem;
+  width: 20rem;
+}
+
+.mason-image {
+  height: 20rem;
+  width: 20rem;
+}
 
 

@@ -5,27 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink Floyd LandingPage</title>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src=""></script>
+  <script src="./assets/js/index.js"></script>
 </head>
 <body>
   <header>    
-    <nav class="nav-bar" id="nav-list">
-      <a class="logo" href="/"><img src="./assets/images/logo.svg"></a>
+    <nav class="nav-bar">
+      <img class="logo" src="./assets/images/logo.svg">
       <ul class="nav-list" >
-        <li><a href="/">Home</a></li>
-        <li><a href="/">História</a></li>
-        <li><a href="/">Integrantes</a></li>
-        <li><a href="/">Álbuns</a></li>
-        <li><a href="/">Músicas</a></li>
+        <li><a class="home" href="/">Home</a></li>
+        <li><a class="history" href="#history">História</a></li>
+        <li><a class="members" href="#members">Integrantes</a></li>
+        <li><a class="albuns"href="/">Álbuns</a></li>
+        <li><a class="songs"href="/">Músicas</a></li>
       </ul>
       <a class="light"><img src="./assets/images/light.svg"></a>      
     </nav>
-    <a class="pink-floyd"><img src="./assets/images/pink_floyd.svg"></a>    
-    <p class="pink-text">Uma breve viagem na história da minha banda preferida</p>
-    <a class="down_arrow" href="/"><img src="./assets/images/down_arrow.svg"></a> 
+    <main>
+      <a class="pink-floyd"><img src="./assets/images/pink_floyd.svg"></a>    
+      <p class="pink-text">Uma breve viagem na história da minha banda preferida</p>
+      <a class="down_arrow" href="#history"><img src="./assets/images/down_arrow.svg"></a> 
+    </main>
+    
   </header>
-  <main>
+  <section id="history" alt="Seção da história">
+    <div class="history-page">
+      <h1 class="about-header" alt="">História do Pink Floyd</h1>
+      <div class="about-text">
+        <p> Pink Floyd, uma das bandas mais icônicas e influentes da história do rock, foi formada em 1965, em Londres, por Syd Barrett (vocal e guitarra), Roger Waters (baixo), Richard Wright (teclado) e Nick Mason (bateria). Inicialmente, a banda explorava a psicodelia e era liderada por Barrett, cujo comportamento imprevisível devido ao uso excessivo de drogas levou à sua saída em 1968. Após sua partida, David Gilmour juntou-se ao grupo, e Roger Waters emergiu como o principal compositor e letrista da banda. Pink Floyd lançou álbuns inovadores como "The Dark Side of the Moon" (1973) e "Wish You Were Here" (1975), misturando elementos de rock progressivo, música experimental e letras filosóficas, conquistando enorme sucesso comercial e crítico.</p>
+        <p> A segunda metade da carreira da banda foi marcada por tensões internas, principalmente entre Waters e os outros membros, culminando em sua saída em 1985. Após a saída de Waters, o Pink Floyd continuou sob a liderança de Gilmour, lançando mais álbuns, como "A Momentary Lapse of Reason" (1987) e "The Division Bell" (1994). Em 2005, os membros originais se reuniram para uma apresentação no evento Live 8, marcando uma reaproximação temporária. A banda entrou em um hiato indefinido a partir de 1995 e, após a morte de Richard Wright em 2008 e o lançamento do álbum "The Endless River" em 2014, Gilmour anunciou que o Pink Floyd havia encerrado suas atividades definitivamente.</p>
+      </div>      
+    </div>
+  </section>
+  <section class="members" id="members" alt='Seção de membros'>    
+    <div class="members-content">
+      <h1>Integrantes</h1>
+      <div class="members-images">
+        <p class="left-text" alt="Texto descritivo sobre quem é o baixista e vocalista Roger Waters">Roger Waters é um renomado músico e compositor britânico, nascido em 6 de setembro de 1943, e é melhor conhecido como co-fundador da icônica banda de rock progressivo Pink Floyd. Ele serviu como baixista, vocalista e principal compositor da banda, contribuindo para a criação de álbuns aclamados como "The Dark Side of the Moon" e "The Wall". Sua obra frequentemente explora temas como guerra, poder e direitos humanos, refletindo suas fortes convicções políticas e sociais.
+          Após deixar o Pink Floyd em 1985 devido a tensões internas, Waters embarcou em uma carreira solo bem-sucedida, lançando diversos álbuns e mantendo-se ativo na indústria da música, realizando turnês e apresentações. Mesmo após anos de disputas, a banda conseguiu se reunir para uma apresentação no evento de caridade Live 8 em 2005.</p>        
+        <div class="line"></div>
+        <img class="roger-waters-image" src="/assets/images/Waters.png" alt="Foto Roger Waters">       
+      </div>
+      <div class="members-images"> 
+        <img class="guilmour-image" src="./assets/images/guilmour.png" alt="Foto David Guilmour">         
+        <div class="line"></div> 
+        <p class="right-text" alt="Texto descritivo sobre quem é o guitarrista e vocalista David Guilmour">David Gilmour é outro membro icônico do Pink Floyd, ingressando na banda em 1968 como guitarrista e vocalista. Ele é reconhecido por seu estilo de guitarra distintivo e habilidades de composição, contribuindo significativamente para o sucesso contínuo da banda. Com ele, o Pink Floyd lançou alguns de seus álbuns mais bem-sucedidos e inovadores, incluindo "The Dark Side of the Moon", "Wish You Were Here", e "The Wall".
+          Após o conflito interno e a subsequente saída de Roger Waters em 1985, Gilmour assumiu a liderança do Pink Floyd, guiando a banda por mais alguns projetos, incluindo o álbum "A Momentary Lapse of Reason". Paralelamente, ele também desenvolveu uma sólida carreira solo, explorando diferentes sonoridades e temas musicais. Gilmour continua a ser uma figura influente na indústria da música até hoje.</p>            
+      </div>
+      <div class="members-images">
+        <p class="left-text">Richard Wright é um músico britânico, membro fundador do Pink Floyd, atuando como tecladista e ocasional vocalista da banda. Ele contribuiu significativamente para o som característico do Pink Floyd, sendo fundamental na criação de atmosferas sonoras únicas e texturas ricas que definiram álbuns como "The Dark Side of the Moon" e "Wish You Were Here". Sua abordagem musical inovadora e seus arranjos de teclado foram essenciais para o som progressivo e psicodélico da banda.
+          Além de seu trabalho com o Pink Floyd, Richard Wright também lançou projetos solo, embora com menos frequência e visibilidade que seus companheiros de banda. Ele permaneceu com a banda até sua morte em 2008, continuando a contribuir para a música e a evolução sonora do grupo, e é lembrado como uma peça-chave no legado duradouro do Pink Floyd.</p>
+        <div class="line"></div>
+        <img class="wright-image" src="./assets/images/Wright.png" alt="Texto descritivo sobre quem é o tecladista Richard Wright">           
+      </div>
+      <div class="members-images">
+        <img class="mason-image" src="./assets/images/Mason.png" alt="Texto descritivo sobre quem é o baterista Nick Mason">
+        <div class="line"></div>
+        <p class="right-text">Nick Mason é o baterista e único membro constante da banda de rock progressivo Pink Floyd, participando da formação da banda desde sua criação em 1965. Ele é reconhecido por seu estilo de percussão distinto e sua habilidade em criar padrões rítmicos complexos, contribuindo para a sonoridade inovadora e experimental da banda. Ao longo dos anos, ele ajudou a definir o som do Pink Floyd em álbuns icônicos como "The Dark Side of the Moon" e "Wish You Were Here".
+          Além de seu envolvimento com o Pink Floyd, Nick Mason também se aventurou em outros projetos musicais e tem um profundo interesse por automobilismo, sendo conhecido por sua coleção de carros clássicos e de corrida. Ele continua ativo na indústria da música, explorando diferentes facetas da arte sonora e mantendo viva a herança musical do Pink Floyd.</p>
+      </div>
+    </div>
+  </section>
+  <section class="">
 
-  </main>
+  </section>
 </body>
 </html>
