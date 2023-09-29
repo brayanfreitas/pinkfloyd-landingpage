@@ -18,8 +18,10 @@
 }
 
 header {
+  display: flex;
+  flex-direction: column;
   background: url('../images/dark-side-the-wall.jpg') no-repeat center center;/* Sombra */
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   height: 98vh;
   position: relative;
@@ -43,9 +45,9 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25); /* Cor da sombra com 50% de opacidade */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  z-index: -1; /* Para ficar atrás do conteúdo */
+  background: rgba(0, 0, 0, 0.25); 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  z-index: -1; 
 }
 
 .nav-bar {
@@ -53,29 +55,31 @@ header::before {
   justify-content: space-between;
   align-items: center;
   font-family: 'Floyd', 'Arial'; 
+  padding: 1rem 5vw;
 }
 
 .logo {
-  margin-top: 3.8rem;
-  margin-left: 4.7rem;
+  max-width: 10vw;
+  width: 100%;
+  height: auto;
+  margin-top: 6.5vh;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  margin-top: 2.8rem;
-  margin-right: 12rem;
-  position: relative;
+  margin-top: 5vh;
+  margin-right: 6vw;
 }
 
 .nav-list li { 
   letter-spacing: 3px;
-  margin-left: 40px;
+  margin-left: 3vw;
 }
 
 .nav-list li a { 
   text-decoration-line: none;
-  font-size: 30px;
+  font-size: 1.5vw;
   font-weight: 400;
   text-transform: uppercase;
   text-shadow: 
@@ -87,103 +91,104 @@ header::before {
 
 .light { 
   position: absolute;
-  top: 13.1%; /* Ajusta a posição superior conforme necessário */
-  left: 14%;
+  margin-top: 6vh;
+  margin-left: 6vw;
   z-index: -1;
 }
 
+.light img {
+  width: 80vw;
+}
+
 .home {
-  color: #FDFF00; /* Define a cor desejada para o primeiro link */
+  color: #FDFF00;
 }
 
-/* Estilos para o segundo link dentro do segundo <li> */
 .history {
-  color: #CC102D; /* Define a cor desejada para o segundo link */
-}
-
-/* Estilos para o terceiro link dentro do terceiro <li> */
-.members {
-  color: #33CA00; /* Define a cor desejada para o terceiro link */
+  color: #CC102D;
 }
 
 .albuns {
-  color: #1293C5; /* Define a cor desejada para o terceiro link */
+  color: #1293C5;
 }
 
 .songs {
-  color: #7643E5; /* Define a cor desejada para o terceiro link */
+  color: #7643E5;
 }
-
 
 .pink-floyd {
   position: absolute;
-  top: 40%; /* Ajuste a posição superior conforme necessário */
-  left: 2%;
+  margin-top: 3vw;
+  margin-left: 2vw;;
 }
 
-.pink-floyd img{
-  max-width: 80%;
-  height: auto;
-  width: auto;  
+.pink-floyd img {
+  margin-left: 2vw;
+  width: 35vw;
 }
 
 .pink-text {
   background-image: linear-gradient(to right,  #CC102D 18.17%, #FFAD00 33.35%, #FDFF00 46.24%, #33CA00 60.87%, #1293C5 75.5%, #5C30BD 92.11%);
   -webkit-background-clip: text;
+  display: flex;
   color: transparent;
-  position: relative;
+  position: absolute;
   text-align: center;
   font-family: Floyd;
-  font-size: 40px;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 400;
-  line-height: 45px; /* 112.5% */
+  line-height: 45px; 
   text-transform: uppercase;
-  max-width: 30%;
-  top: 27rem;
-  left: 33.3%;
+  margin-top: 45vh;
+  margin-left: 16.5em;
+  max-width: 80px;
+  min-width: 15em;
   -webkit-text-stroke: 1px black;
 }
 
 .down_arrow {
-  position: relative;
-  top: 35.5rem;
-  left: 56rem;
+  position: absolute;
+  top: 97%; /* ou outro valor que você acha que é mais adequado */
+  left: 50%; /* Centralizar Horizontalmente */
+  transform: translateX(-50%);
 }
 
 .history-page {
   background: url('../images/members.png') no-repeat center center;/* Sombra */
-  background-size: 100%;
-  height: 99vh;
+  padding: 2vw;
+  background-size: cover;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 
 .about-header {
   color: white;
   margin-top: 4rem;
-  font-size: 60px;
+  font-size: 3.5vw;
   font-family: 'Floyd', 'Arial';
   text-shadow: 
   -1px -1px 0 #000,  
   1px -1px 0 #000,
   -1px 1px 0 #000,
-  2px 2px 0 #000; /* #000 é a cor do contorno, neste caso, preto */
+  2px 2px 0 #000;
 }
 
 .about-text {
-  display: flex; /* Torna a div paragrafos em um container flex */
-  justify-content: space-around; /* Distribui espaço uniformemente entre os parágrafos, alinhando-os horizontalmente */
+  display: flex; 
+  justify-content: space-around; 
 }
 
 .about-text p {
   font-family: 'Irish Grover', 'Arial';
   margin-top: 7rem;
   width: 40%;
-  font-size: 30px;  
-  color: white; /* Dá uma largura para cada parágrafo para que não ocupem toda a largura disponível */
+  font-size: 1.6em;  
+  color: white; 
   text-shadow: 
   -1px -1px 0 #000,  
   1px -1px 0 #000,
@@ -193,8 +198,10 @@ header::before {
 }
 
 .members-content {
-  height: 100%; 
+  height: 100%;
+  width: 100%;
   background: linear-gradient(to bottom, #000000, #1b1a1a 60%, #2b2929 75%, #333 100%);
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -204,14 +211,14 @@ header::before {
 
 .members-content h1 {
   margin-top: 7rem;
-  font-size: 60px;
+  font-size: 4vw;
 }
 
 .members-images {
   display: flex;
   align-items: center;
   margin-top: 10rem;
-  width: 80%;
+  width: 90vw;
   margin-bottom: 10rem;
 }
 
@@ -231,10 +238,10 @@ img {
 .left-text {
   font-family: 'Irish Grover', 'Arial';
   position: absolute;
-  margin-top: 15rem;
-  left: 15rem;
+  margin-top: 17rem;
+  left: 10rem;
   font-size: 18px;
-  width: 40%;
+  width: 43rem;
   text-shadow: 
   -1px -1px 0 #000,  
   1px -1px 0 #000,
@@ -246,41 +253,41 @@ img {
 .right-text {
   font-family: 'Irish Grover', 'Arial';
   position: absolute;
-  margin-top: 15rem;
+  margin-top: 17rem;
   font-size: 18px;
-  width: 40%;
+  text-align: justify;
+  width: 43rem;
   text-shadow: 
   -1px -1px 0 #000,  
   1px -1px 0 #000,
   -1px 1px 0 #000,
   2px 2px 0 #000; 
-  text-align: justify;
-  margin-left: 37%;
+  right: 10rem;
+  
 }
 
-.roger-waters-image {
-  height: 20rem;
-  width: 20rem;
+.members-image {
+  height: 20vw;
+  width: 20vw;
+  box-shadow:  
+  -1px -1px 0 white,  
+  1px -1px 0 white,
+  -1px 1px 0 white,
+  2px 2px 0 white;
 }
 
-.guilmour-image {
-  height: 20rem;
-  width: 20rem;
+.dark-side {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ background-color: black;
+ height: 98vh;
 }
 
-.roger-waters-image {
-  height: 20rem;
-  width: 20rem;
+.dark-side-frame {
+  background-color: #f4f1e9;
+  height: 70vh;
+  width: 45rem;
+  margin-top: 8rem;
+
 }
-
-.wright-image {
-  height: 20rem;
-  width: 20rem;
-}
-
-.mason-image {
-  height: 20rem;
-  width: 20rem;
-}
-
-
