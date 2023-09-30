@@ -17,10 +17,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
   display: flex;
   flex-direction: column;
-  background: url('../images/dark-side-the-wall.jpg') no-repeat center center;/* Sombra */
+  background: url('../images/dark-side-the-wall.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 98vh;
@@ -31,6 +38,10 @@ header {
 h1 {
   font-family: 'Floyd', 'Arial';
   color: white;
+}
+
+h3 {
+  color: black;
 }
 
 p {
@@ -102,6 +113,10 @@ header::before {
 
 .home {
   color: #FDFF00;
+}
+
+.members {
+  color: #33CA00;
 }
 
 .history {
@@ -222,7 +237,16 @@ header::before {
   margin-bottom: 10rem;
 }
 
-img {
+.members-images h3 {
+  margin-bottom: 3rem;
+  position: absolute;
+  color: white;
+  margin-left: 3rem;
+  font-size: 30px;
+  font-family: 'Irish Grover', 'Arial';
+}
+
+.members-images img {
   border-radius: 50%; 
 }
 
@@ -280,14 +304,174 @@ img {
  display: flex;
  flex-direction: row;
  justify-content: center;
- background-color: black;
+ position: relative;
  height: 98vh;
+ background-color: black;
 }
 
-.dark-side-frame {
-  background-color: #f4f1e9;
-  height: 70vh;
-  width: 45rem;
-  margin-top: 8rem;
+.prev, .next {
+  position: absolute;
+  transform: translateY(25rem); 
+  font-size: 6rem; 
+  color: #FFF; 
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  z-index: 1;  
+}
 
+.prev { 
+  left: 8rem; 
+} 
+
+.next { 
+  right: 8rem; 
+} 
+
+.prev:hover, .next:hover {
+  background-color: rgba(85, 101, 131, 0.9); /* Aumenta a opacidade ao passar o mouse, ajuste conforme necessário */
+}
+
+.album-frame {
+  background-color: #f4f1e9;
+  height: 87vh;
+  width: 45vw;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-firt-line {
+  background-color: black;
+  height: 2px; 
+  width: 75%;
+  align-self: center;
+}
+
+.album-last-line {
+  background-color: black;
+  height: 3px; 
+  width: 75%;
+  align-self: center;
+}
+
+.album-header {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 2rem 10rem 0.2rem 10rem;
+  
+}
+.album-header p {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.album-frame p {
+  position: relative;
+  color: black;
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;  
+}
+
+.album-frame h1, h2 {
+    color: black;
+    font-family: "Nunito";
+    font-size: 30px;    
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.album-band {
+  width: 10em;
+  margin: 1rem 2rem 0rem 10rem;
+  font-style: italic;
+  
+}
+
+.album-title {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;  
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0.1rem 1em 0rem 3rem;
+  font-weight: 1000;
+}
+
+.album-cover {
+  margin-top: 1rem;
+  align-self: center;
+  height: 55%;
+  width: 65%; 
+}
+
+.disc-songs {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.songs-list {
+  margin-top: 0.2rem;
+  color: black;
+  list-style-type: none;
+  counter-reset: list-counter;
+  margin-bottom: 1rem;
+}
+
+.songs-list li {
+  counter-increment: list-counter;
+  position: relative;
+  text-transform: capitalize;
+  font-family: "Nunito";
+  margin-bottom: 0.1rem;
+}
+
+.songs-list li::before {
+  content: counter(list-counter) "-";
+}
+
+.side-a, .side-b {
+  font-family: "Nunito";
+}
+
+.the-wall {
+  background: url('../images/The-wall.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  height: 98vh;
+}
+
+.album-header-the-wall p{
+  color: white;
+}
+
+.the-wall-frame {
+  background-color: black;
+}
+
+.prev-the-wall, .next-the-wall {
+  color: #1B1B1B;
+}
+
+.songs-list-wall li {
+  color: white;
+}
+
+.the-wall-line {
+  background-color: white;
+}
+
+.cd h3{
+  margin-top: 1rem;
+  color: white;
 }
