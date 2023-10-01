@@ -4,26 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink Floyd LandingPage</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="./assets/js/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
   <header>    
     <nav class="nav-bar">
-      <img class="logo" src="./assets/images/logo.svg">
+      <img class="logo" src="./assets/images/logo.svg" alt="logo">
       <ul class="nav-list" >
-        <li><a class="home" href="/">Home</a></li>
-        <li><a class="history" href="#history">História</a></li>
-        <li><a class="members" href="#members">Integrantes</a></li>
-        <li><a class="albuns"href="#albuns">Álbuns</a></li>
-        <li><a class="songs"href="#songs">Músicas</a></li>
+        <li><a class="home" href="/" alt="Botão para página princial">Home</a></li>
+        <li><a class="history" href="#history" alt="Botão para seção de história">História</a></li>
+        <li><a class="members" href="#members" alt="Botão para seção de integrantes">Integrantes</a></li>
+        <li><a class="albuns" href="#albuns" alt="Botão para seção de álbuns">Álbuns</a></li>
+        <li><a class="songs" href="#music-player" alt="Botão para seção de músicas">Músicas</a></li>
       </ul>
       <a class="light"><img src="./assets/images/light.svg"></a>      
     </nav>
     <main>
       <a class="pink-floyd"><img src="./assets/images/pink_floyd.svg"></a>    
-      <p class="pink-text">Uma breve viagem na história da minha banda preferida</p>
-      <a class="down_arrow" href="#history"><img src="./assets/images/down_arrow.svg"></a> 
+      <p class="pink-text" alt="Texto inicial">Uma breve viagem na história da minha banda preferida</p>
+      <a class="down_arrow" href="#history" alt="Seta para baixo, próxima sção"><img src="./assets/images/down_arrow.svg"></a> 
     </main>    
   </header>
   <section id="history" alt="Seção da história">
@@ -47,8 +47,9 @@
           <div class="line"></div>
         <img class="members-image" src="/assets/images/Waters.png" alt="Imagem do Roger Waters">       
       </div>
-      <div class="members-images">        
-        <img class="members-image" src="./assets/images/guilmour.png" alt="Imagem do David Guilmour">        
+      <div class="members-images members-images-right">        
+        <img class="members-image" src="./assets/images/guilmour.png" alt="Imagem do David Guilmour">
+        <h3>David Guilmour</h3>       
         <div class="line"></div> 
         <p class="right-text" alt="Texto descritivo sobre quem é o guitarrista e vocalista David Guilmour">David Gilmour é outro membro icônico do Pink Floyd, ingressando na banda em 1968 como guitarrista e vocalista. Ele é reconhecido por seu estilo de guitarra distintivo e habilidades de composição, contribuindo significativamente para o sucesso contínuo da banda. Com ele, o Pink Floyd lançou alguns de seus álbuns mais bem-sucedidos e inovadores, incluindo "The Dark Side of the Moon", "Wish You Were Here", e "The Wall".
           Após o conflito interno e a subsequente saída de Roger Waters em 1985, Gilmour assumiu a liderança do Pink Floyd, guiando a banda por mais alguns projetos, incluindo o álbum "A Momentary Lapse of Reason". Paralelamente, ele também desenvolveu uma sólida carreira solo, explorando diferentes sonoridades e temas musicais. Gilmour continua a ser uma figura influente na indústria da música até hoje.</p>            
@@ -56,11 +57,13 @@
       <div class="members-images">
         <p class="left-text" alt="Texto descritivo sobre quem é o tecladista Richard Wright">Richard Wright é um músico britânico, membro fundador do Pink Floyd, atuando como tecladista e ocasional vocalista da banda. Ele contribuiu significativamente para o som característico do Pink Floyd, sendo fundamental na criação de atmosferas sonoras únicas e texturas ricas que definiram álbuns como "The Dark Side of the Moon" e "Wish You Were Here". Sua abordagem musical inovadora e seus arranjos de teclado foram essenciais para o som progressivo e psicodélico da banda.
           Além de seu trabalho com o Pink Floyd, Richard Wright também lançou projetos solo, embora com menos frequência e visibilidade que seus companheiros de banda. Ele permaneceu com a banda até sua morte em 2008, continuando a contribuir para a música e a evolução sonora do grupo, e é lembrado como uma peça-chave no legado duradouro do Pink Floyd.</p>
-        <div class="line"></div>
+          <h3>Richard Wright</h3> 
+          <div class="line"></div>
         <img class="members-image" src="./assets/images/Wright.png" alt="Imagem do tecladista Richard Wright">           
       </div>
-      <div class="members-images">
+      <div class="members-images members-images-right">
         <img class="members-image" src="./assets/images/Mason.png" alt="Iamgem do baterista Nick Mason">
+        <h3>Nick Mason</h3> 
         <div class="line"></div>
         <p class="right-text" alt="Texto descritivo sobre quem é o baterista Nick Mason">Nick Mason é o baterista e único membro constante da banda de rock progressivo Pink Floyd, participando da formação da banda desde sua criação em 1965. Ele é reconhecido por seu estilo de percussão distinto e sua habilidade em criar padrões rítmicos complexos, contribuindo para a sonoridade inovadora e experimental da banda. Ao longo dos anos, ele ajudou a definir o som do Pink Floyd em álbuns icônicos como "The Dark Side of the Moon" e "Wish You Were Here".
           Além de seu envolvimento com o Pink Floyd, Nick Mason também se aventurou em outros projetos musicais e tem um profundo interesse por automobilismo, sendo conhecido por sua coleção de carros clássicos e de corrida. Ele continua ativo na indústria da música, explorando diferentes facetas da arte sonora e mantendo viva a herança musical do Pink Floyd.</p>
@@ -70,104 +73,145 @@
   <section class="albuns" id="albuns" alt="Seção contendo slider dos albuns">
       <div class="slides">
         <div class="slide-container">          
-        <div class="dark-side"> 
-          <span class="prev" alt="Próximo álbum">&#10094</span>
-          <span class="next" alt="Álbum Anterior">&#10095</span>           
-          <div class="album-frame">
-            <div class="album-header">
-              <p class="dark-side-date" alt="Data de lançamento do álbum">1 Março, 1997</p>
-              <p class="dark-side-time" alt="Duração em minutos do album">42:50</p>
-            </div>                     
-            <div class="album-firt-line"></div>
-            <h1 class="album-band" alt="Nome da banda">Pink Floyd</h1> 
-            <h2 class="album-title" alt="Título do album"> The Dark Side Of The Moon</h2>
-            <img class="album-cover" alt="Capa do album the dark side of the moon" src="./assets/images/album-dark-side.png"></img>
-            <div class="disc-songs">
-              <div class="side-a" alt="Lado A">
-                <h3 alt="Músicas do lado A do disco">LADO A</h3>
-                <ol class="songs-list">
-                  <li alt="Música Money">Speak To me </li>
-                  <li alt="Música Breath">Breath</li>
-                  <li alt="Música On the run">On the run</li>
-                  <li alt="Música Time">Time</li>
-                  <li alt="Música The great gig in the sky">The great gig in the sky</li>
-                </ol>
+        <div class="slide">
+          <div class="dark-side"> 
+            <span class="prev" alt="Próximo álbum">&#10094</span>
+            <span class="next" alt="Álbum Anterior">&#10095</span>           
+            <div class="album-frame">
+              <div class="album-header">
+                <p class="dark-side-date" alt="Data de lançamento do álbum">1 Março, 1973</p>
+                <p class="dark-side-time" alt="Duração em minutos do album">42:50</p>
+              </div>                     
+              <div class="album-firt-line"></div>
+              <h1 class="album-band" alt="Nome da banda">Pink Floyd</h1> 
+              <h2 class="album-title" alt="Título do album"> The Dark Side Of The Moon</h2>
+              <img class="album-cover" alt="Capa do album the dark side of the moon" src="./assets/images/album-dark-side.png"></img>
+              <div class="disc-songs">
+                <div class="side-a" alt="Lado A">
+                  <h3 alt="Músicas do lado A do disco">LADO A</h3>
+                  <ol class="songs-list">
+                    <li alt="Música Money">Speak To me </li>
+                    <li alt="Música Breath">Breath</li>
+                    <li alt="Música On the run">On the run</li>
+                    <li alt="Música Time">Time</li>
+                    <li alt="Música The great gig in the sky">The great gig in the sky</li>
+                  </ol>
+                </div>
+                <div class="side-b" alt="Lado B">
+                  <h3 alt="Músicas do lado B do disco">LADO B</h3>
+                  <ol class="songs-list">
+                    <li alt="Música Money">Money</li>
+                    <li alt="Música Us and Them">Us and Them</li>
+                    <li alt="Música in any coulor you like">in any coulor you like</li>
+                    <li alt="Música brain damage">brain damage</li>
+                    <li alt="Música eclipse">eclipse</li>
+                  </ol>
+                </div>                         
               </div>
-              <div class="side-b" alt="Lado B">
-                <h3 alt="Músicas do lado B do disco">LADO B</h3>
-                <ol class="songs-list">
-                  <li alt="Música Money">Money</li>
-                  <li alt="Música Us and Them">Us and Them</li>
-                  <li alt="Música in any coulor you like">in any coulor you like</li>
-                  <li alt="Música brain damage">brain damage</li>
-                  <li alt="Música eclipse">eclipse</li>
-                </ol>
-              </div>                         
+              <span class="album-last-line"></span>           
             </div>
-            <span class="album-last-line"></span>           
           </div>
         </div>
-        <div class="the-wall">
-          <span class="prev-the-wall prev" alt="Próximo álbum">&#10094</span>
-          <span class="next-the-wall next" alt="Álbum Anterior">&#10095</span>           
-          <div class="album-frame the-wall-frame">
-            <div class="album-header album-header-the-wall">
-              <p  alt="Data de lançamento do álbum">1 Março, 1997</p>
-              <p  alt="Duração em minutos do album">42:50</p>
-            </div>                     
-            <div class="album-firt-line the-wall-line"></div>
-            <h1 class="album-band" alt="Nome da banda">Pink Floyd</h1> 
-            <h2 class="album-title" alt="Título do album"> The Dark Side Of The Moon</h2>
-            <img class="album-cover" alt="Capa do album the dark side of the moon" src="./assets/images/the-wall-cover.jpg"></img>
-            <div class="disc-songs">
-              <div class="side-a cd" alt="Disco(1) Lado A">
-                <h3 alt="Músicas do lado A do disco">Disco(1) A</h3>
-                <ol class="songs-list songs-list-wall">
-                  <li alt="Música 1">Speak To me </li>
-                  <li alt="Música 2">Breath</li>
-                  <li alt="Música 3">On the run</li>
-                  <li alt="Música 4">Time</li>
-                  <li alt="Música 5">The great gig in the sky</li>
-                </ol>
+        <div class="slide">
+          <div class="the-wall">
+            <span class="prev-the-wall prev" alt="Próximo álbum">&#10094</span>
+            <span class="next-the-wall next" alt="Álbum Anterior">&#10095</span>           
+            <div class="album-frame the-wall-frame">
+              <div class="album-header album-header-the-wall">
+                <p  alt="Data de lançamento do álbum">30 Novembro, 1979</p>
+                <p  alt="Duração em minutos do album">81:09 </p>
+              </div>                     
+              <div class="album-firt-line the-wall-line"></div>
+              <h1 class="album-band album-band-the-wall" alt="Nome da banda">Pink Floyd</h1> 
+              <h2 class="album-title album-title-the-wall" alt="Título do album">The Wall</h2>
+              <img class="album-cover" alt="Capa do album the wall" src="./assets/images/the-wall-cover.jpg"></img>
+              <div class="disc-songs">
+                <div class="side-a cd" alt="Disco(1) Lado A">
+                  <h3 alt="Músicas do lado A do disco">Disco(1) A</h3>
+                  <ol class="songs-list songs-list-wall">
+                    <li alt="Música 1">In the Flesh? </li>
+                    <li alt="Música 2">The Thin Ice</li>
+                    <li alt="Música 3">Another Brick In the wall (Part I)</li>
+                    <li alt="Música 4"> The happiest day of ours live</li>
+                    <li alt="Música 5">Another brick in the wall (part II)</li>
+                    <li alt="Música 5">Mother</li>
+                  </ol>
+                </div>
+                <div class="side-b cd" alt="Lado B">
+                  <h3 alt="Músicas do lado B do disco">Disco(1) B</h3>
+                  <ol class="songs-list songs-list-wall">
+                    <li alt="Música 6">Goodbye blue sky</li>
+                    <li alt="Música 7">Empty spaces</li>
+                    <li alt="Música 8">Young Lust</li>
+                    <li alt="Música 9">one of my turns</li>
+                    <li alt="Música 10">don't leave me now</li>
+                    <li alt="Música 11">another brick in the wall (Part III)</li>
+                    <li alt="Música 11">Goodbye Cruel World</li>
+                  </ol>
+                </div>
+                <div class="side-a cd" alt="Lado A">
+                  <h3 alt="Músicas do lado A do disco">Disco(2) A</h3>
+                  <ol class="songs-list songs-list-wall">
+                    <li alt="Música 12">Hey You</li>
+                    <li alt="Música 13">Is There Anybody Out There?</li>
+                    <li alt="Música 14">Nobody Home</li>
+                    <li alt="Música 15">Vera</li>
+                    <li alt="Música 16">Bring the Boys Back Home</li>
+                    <li alt="Música 17">Comfortably Numb</li>
+                  </ol>
+                </div>
+                <div class="side-b cd" alt="Lado B">
+                  <h3 alt="Músicas do lado B do disco">Disco(2) B</h3>
+                  <ol class="songs-list songs-list-wall">
+                    <li alt="Música 17">The Show Must Go On</li>
+                    <li alt="Música 18">In the Flesh</li>
+                    <li alt="Música 19">Run Like Hell</li>
+                    <li alt="Música 20">Waiting for the Worms</li>
+                    <li alt="Música 21">Stop</li>
+                    <li alt="Música 21">Outside The Wall</li>
+                  </ol>
+                </div>                            
               </div>
-              <div class="side-b cd" alt="Lado B">
-                <h3 alt="Músicas do lado B do disco">Disco(1) B</h3>
-                <ol class="songs-list songs-list-wall">
-                  <li alt="Música 6">Money</li>
-                  <li alt="Música 7">Us and Them</li>
-                  <li alt="Música 8">in any coulor you like</li>
-                  <li alt="Música 9">brain damage</li>
-                  <li alt="Música 10">eclipse</li>
-                </ol>
-              </div>
-              <div class="side-a cd" alt="Lado A">
-                <h3 alt="Músicas do lado A do disco">Disco(2) A</h3>
-                <ol class="songs-list songs-list-wall">
-                  <li alt="Música 11">Speak To me </li>
-                  <li alt="Música 12">Breath</li>
-                  <li alt="Música 13">On the run</li>
-                  <li alt="Música 14">Time</li>
-                  <li alt="Música 15">The great gig in the sky</li>
-                </ol>
-              </div>
-              <div class="side-b cd" alt="Lado B">
-                <h3 alt="Músicas do lado B do disco">Disco(2) B</h3>
-                <ol class="songs-list songs-list-wall">
-                  <li alt="Música 16">Money</li>
-                  <li alt="Música 17">Us and Them</li>
-                  <li alt="Música 18">in any coulor you like</li>
-                  <li alt="Música 19">brain damage</li>
-                  <li alt="Música 20">eclipse</li>
-                </ol>
-              </div>                            
+              <span class="album-last-line the-wall-line"></span>           
             </div>
-            <span class="album-last-line the-wall-line"></span>           
           </div>
-        </div>
-                
+        </div>                
         </div>
       </div>      
     </div>
   </section>
+  <section class="music-section" id="music-player" aria-hidden="true" alt="seção do tocador de música">
+    <div class="music-player">
+      <p class="music-logo"><i class="fa-solid fa-music" alt="logo"></i>Pink Floyd</p>
+      <div class="left">
+        <div id="disk" class="disk"></div>
+        <div class="volume">
+          <p id="volume_show" alt="valor do volume">90</p>
+          <i class="fa-solid fa-volume-high" id="volume_icon"></i>
+          <input type="range" min="0" max="100" value="90" id="volume" alt="barra horizontal para alterar o volume">
+        </div>        
+      </div>
+      <div class="right">
+        <div class="show_song_number">
+          <p id="present" alt="musica atual">1</p>
+          <p id="">/</p>
+          <p id="total" alt="total de musica">5</p>
+        </div>
+        <p id="title" alt="título da musica">title.mp3</p>
+        <div class="middle">
+          <button id="previous" alt="música anterior"><i class="fa-solid fa-backward-step"></i></button>
+          <button id="play" alt="pausar ou reproduzir"><i class="fa-solid fa-play"></i></button>
+          <button id="next" alt="próxima música"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="duration">
+          <input type="range" min="0" max="100" value="0" id ="song_duration" alt="duração da musica">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+
+  <script type="module" src="./assets/js/slider.js"></script>
+  <script type="module" src="./assets/js/song-player.js"></script>
 </body>
 </html>
