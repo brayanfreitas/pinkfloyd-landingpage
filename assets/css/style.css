@@ -733,12 +733,53 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 0 5px;
 }
 
+.footer {
+  height: 50vh;
+  background: linear-gradient(to right, #000000, #1b1a1a 60%, #1d1b1b 75%, #222121 100%);
+  display: flex;
+  justify-content: space-evenly;  
+}
+
+.footer .headers h1 {
+  text-align: center;
+  font-family: "Nunito";
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .headers p {
+  margin-top: 2rem;
+  font-family: "Nunito";
+  width: 15rem;
+  text-align: justify;
+}
+
+.footer .headers p a {
+  color: white;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
   }
   100%{
     transform: rotate(360deg);
-  }
-  
+  }  
 }
+

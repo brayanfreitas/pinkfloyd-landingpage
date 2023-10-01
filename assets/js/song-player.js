@@ -109,7 +109,8 @@ function changeVolume() {
 
 //Muda o tempo da musica de acordo com a posição do slider
 function changeDuration() {
-  const sliderPosition = track.duration * (songDuration.value/100);
+  
+  const sliderPosition = (track.duration * (songDuration.value/100)).toFixed(3);
   track.currentTime = sliderPosition;
 }
 
