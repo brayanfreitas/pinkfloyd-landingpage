@@ -760,20 +760,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -782,4 +768,183 @@ input[type="range"]::-webkit-slider-thumb {
     transform: rotate(360deg);
   }  
 }
+/* Reponsividade */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 6.5vh;
+}
 
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .light {
+    display: none;
+  }
+  .nav-list {
+    margin-top: 60rem;
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .nav-list li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    right: 0;
+  }
+
+  .nav-list li a { 
+    text-decoration-line: none;
+    font-size: 2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    max-width: 16vw;
+  }
+
+  .pink-text {
+    font-size: 1.5rem;
+    margin-left: 10em;
+  }
+
+  .pink-floyd {
+    margin-top: 7vw;
+  }
+
+  .about-text p {
+    font-size: 1.2em;
+
+  }
+
+  .left-text {
+    font-size: 1em;
+    width: 30rem;
+    left: 8rem;
+  }
+
+  .right-text {
+    font-size: 1em;
+    width: 30rem;
+    right: 5rem;
+  }
+
+  .members {
+    height: 190vh;
+  }
+
+  .members-images-right h3 {
+    right: 7rem;
+  }
+
+  .album-cover {
+    height: 30%;
+    width: 35%
+  }
+
+  .dark-side {
+    height: 55vh;
+  }
+
+  .album-frame {
+    height: 45vh;
+    width: 60vw;
+  }
+
+  .prev, .next {
+    position: absolute;
+    transform: translateY(15rem);
+    font-size: 6rem;
+    color: #FFF;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    z-index: 2;
+}
+
+  .next {
+    right: 5rem;
+  }
+
+  .prev {
+    left: 5rem;
+  }
+
+  .history-page {
+    height: 75vh
+  }
+
+  .the-wall {
+    height: 55vh
+  }
+
+  .prev-the-wall, .next-the-wall {
+    color: black;
+  }
+
+  .album-frame p {
+    font-size: 12px;
+  }
+
+  .the-wall-frame {
+    width: 65vw;
+  }
+
+  .music-section {
+    height: 70vh
+  }
+
+  .music-player {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    /* width: 55%; */
+    margin-right: 5rem;
+    margin-top: 5rem;
+    border-radius: 10%;
+    background: linear-gradient(to right, #1d1e1f, #3a3d41);
+  }
+
+  .disk {
+    display: none;
+  }
+
+  .right #title {
+    margin-right: 15rem;
+    font-size: 2rem
+  }
+
+  .middle {
+    margin-top: 3rem;
+    margin-right: 15rem;
+
+  }
+
+  .right .duration {
+    left: 0%;
+    bottom: 5rem
+  }
+
+  .left .volume {
+    bottom: 10%;
+    left: 6rem;
+  }
+
+
+
+}
