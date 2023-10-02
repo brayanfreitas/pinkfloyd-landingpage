@@ -944,7 +944,256 @@ input[type="range"]::-webkit-slider-thumb {
     bottom: 10%;
     left: 6rem;
   }
+}
 
+@media screen and (max-width: 450px) {
+  header {
+    height: 80vh;
+  }
+  .light {
+    display: none;
+  }
+  .nav-list {
+    margin-top: 60rem;
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
 
+  .nav-list li {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    right: 0;
+  }
+
+  .nav-list li a { 
+    text-decoration-line: none;
+    font-size: 5vw;
+    margin-top: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .pink-text {
+    margin-top: 30rem;
+    font-size: 1.5rem;
+    margin-left: 1em;
+  }
+
+  .pink-floyd {
+    display: none;
+  }
+
+  .history-page {
+    height: 110vh
+  }
+
+  .about-text {
+    display: block;    
+  }
+
+  .about-text p {
+
+    margin-top: 2rem;
+    font-size: 1em;
+    width: 20rem;
+  }
+
+  .about-header {
+    font-size: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  .left-text {
+    margin-top: 20rem;
+    font-size: 0.9em;
+    width: 22rem;
+    left: 2rem;
+  }
+
+  .right-text {
+    
+    font-size: 0.9em;
+    width: 22rem;
+    right: 3rem;
+  }
+
+  .nick-mason-text {
+    margin-top: 20rem;
+  }
+
+  .members {
+    height: 190vh;
+  }
+
+  .members-content {
+    height: 100%;
+    margin-top: 0rem;
+  }
+
+  .members-content h1 {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    font-size: 2rem;
+  }
+
+  .members-images {
+    margin-bottom: 15rem;
+  }
+
+  .members-images h3 {
+    margin-left: 6rem;
+
+  }
+  
+  .members-image {
+    display: none;
+  }
+
+  .members-images-right h3 {
+    right: 7rem;
+  }
+
+  .album-cover {
+    height: 45%;
+    width: 55%
+  }
+
+  .dark-side {
+    height: 55vh;
+  }
+
+  .album-frame {
+    height: 40vh;
+    width: 60vw;
+  }
+
+  .album-firt-line{
+    display: none;
+  }
+
+  .album-last-line{
+    display: none;
+  }
+
+  .album-band {
+    margin: 1rem 1rem 0rem 4rem;    
+  }
+
+  .album-frame h1, h2 {
+    font-size: 1.5rem;
+  }
+  
+  .album-title {
+    font-size: 18px;
+    margin: 0.1rem 1em 0rem 4rem;
+  }
+  
+  .album-header {
+    display: none;
+  }
+
+  .music-logo {
+    display: none;
+  }
+
+  .prev, .next {
+    position: absolute;
+    transform: translateY(10rem);
+    font-size: 6rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+    z-index: 2;
+  }
+
+  .next {
+    right: 0.9rem;
+  }
+
+  .prev {
+    left: 0.9rem;
+  }
+
+  .disc-songs {
+    display: none;
+  }
+
+  .the-wall {
+    height: 55vh
+  }
+
+  .prev-the-wall, .next-the-wall {
+    color: black;
+  }
+
+  .album-frame p {
+    font-size: 12px;
+  }
+
+  .the-wall-frame {
+    width: 65vw;
+  }
+
+  .music-section {
+    height: 80vh
+  }
+
+  .music-player {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    width: 85%;
+    margin: 5rem 5rem 0rem 5rem;
+    border-radius: 10%;
+    background: linear-gradient(to right, #1d1e1f, #3a3d41);
+  }
+
+  .disk {
+    display: none;
+  }
+
+  .right #title {
+    margin-right: 10rem;
+    font-size: 2rem
+  }
+
+  .middle {
+    margin-top: 3rem;
+    margin-right: 10rem;
+
+  }
+
+  .right .duration {
+    left: 0%;
+    bottom: 5rem
+  }
+
+  .left .volume {
+    bottom: 10%;
+    left: 6rem;
+  }
+
+  .footer {
+    display: block;
+    height: 110vh;
+  }
+
+  .headers {
+    margin-left: 1rem;
+  }
 
 }
